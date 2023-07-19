@@ -87,6 +87,7 @@ nav li {
     color: #0B0223;
     font-size: 48px;
     font-weight: 600;
+    text-align: center;
 
 }
 
@@ -97,5 +98,79 @@ nav li {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: center;
 
+}
+
+.banner-list p {
+    color: #534C64;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: lowercase;
+
+}
+
+.btn-primary {
+
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    color: #FFF;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.btn-next {
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: #4EC5F7;
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.btn-div {
+    margin-left: 250px;
+}
+/* main section */
+.main-up{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+/* meadia quary */
+@media screen and (max-width:576px) {
+
+    nav,
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-text {
+        width: 700px;
+        height: 700px;
+    }
+    .banner-img{
+        width: 100%;
+    }
 }
