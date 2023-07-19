@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* header sec */
+header {
+    width: 100%;
+    background-color: #FFF;
+}
+
+.header-icon-text {
+    font-size: 45px;
+    font-weight: 700;
+    color: #0B0223;
+
+}
+
+.header-icon {
+    display: flex;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.header-icon img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.icon-text {
+    color: rgba(212, 17, 212, 0.848);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar>ul {
+    list-style: none;
+    display: flex;
+    margin-right: 70px;
+    margin-top: 50px;
+
+}
+
+nav li {
+    margin-left: 70px;
+
+}
+
+#li-with-icon img {
+    width: 33.916px;
+    height: 24px;
+
+}
+
+#li-with-icon {
+    background-color: rgba(11, 2, 35, 0.10);
+    display: flex;
+    gap: 10px;
+    padding: 8px;
+    align-items: center;
+
+}
+
+/* banner items */
+.banner {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #FFF;
+
+}
+
+.banner-text {
+    background-image: url(../pic/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 901px;
+    height: 700px;
+
+}
+
+.banner-heading {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+
+}
+
+.banner-bold {
+    font-size: 95px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
