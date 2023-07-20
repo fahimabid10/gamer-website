@@ -24,8 +24,8 @@ header {
 }
 
 .header-icon img {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 60px;
     margin-right: 10px;
 }
 
@@ -48,6 +48,11 @@ nav {
 
 nav li {
     margin-left: 70px;
+}
+
+nav li a {
+
+    text-decoration: none;
 
 }
 
@@ -118,12 +123,11 @@ nav li {
 
     display: inline-flex;
     padding: 21px 40px;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
     border-radius: 48px;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
     color: #FFF;
-
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -168,9 +172,7 @@ nav li {
     text-align: right;
     font-family: Work Sans;
     font-size: 48px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -194,15 +196,11 @@ nav li {
 .unleash {
     color: #534C64;
     text-align: right;
-    font-family: Work Sans;
     font-size: 24px;
-    font-style: normal;
     font-weight: 500;
     line-height: 45px;
     color: #534C64;
-    font-family: Work Sans;
     font-size: 32px;
-    font-style: normal;
     font-weight: 700;
     line-height: 45px;
 
@@ -210,6 +208,10 @@ nav li {
 
 .unleash-next {
     margin-top: 10px;
+}
+
+.games-head {
+    margin-bottom: 80px;
 }
 
 .games-heading {
@@ -260,19 +262,26 @@ nav li {
     display: flex;
     justify-content: space-evenly;
     margin-top: 200px;
+    background: #FFF;
 
+
+}
+
+
+.text-main-down {
+    margin-top: 200px;
 }
 
 #overlap-img {
     width: 318.5px;
     height: 365.083px;
-    flex-shrink: 0;
     border-radius: 8px;
     border: 10px solid #FFF;
     background: url(<path-to-image>), lightgray 0px -0.304px / 100% 117.229% no-repeat;
     position: relative;
     bottom: 250px;
     right: 100px;
+
 
 }
 
@@ -281,11 +290,11 @@ nav li {
     left: 100px;
 
 
+
+
 }
 
-.img-maindown {
-    padding-left: 50px;
-}
+
 
 .main-down-head {
     text-align: center;
@@ -304,12 +313,9 @@ nav li {
 }
 
 .main-down-description {
-    text-align: center;
     color: #534C64;
-    text-align: right;
-    font-family: Work Sans;
+    text-align: center;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 30px
 }
@@ -327,54 +333,140 @@ nav li {
     align-items: center;
 }
 
-footer {
-    background: #0B0223;
-    width: 1920px;
-    height: 636px;
+
+/* hover sec------------------------------------- */
+.hover {
+    background: background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+
 }
 
-.footer-text>li {
+.hover-card {
+    /* border: 2px solid rgba(216, 65, 90, 0.928); */
+    border-radius: 50px;
+    background: #FFF;
+    width: 248px;
+    height: 80px;
+    display: flex;
+    padding: 10px;
 
-    color: #FFF;
-    text-align: center;
-    font-family: Work Sans;
-    font-size: 18px;
-    font-style: normal;
+}
+
+.hover-text {
     font-weight: 600;
-    line-height: normal;
-    list-style: none;
-
-
+    font-size: 20px;
+    color: rgba(216, 65, 90, 0.928);
+    margin-left: 10px;
 }
 
-.li-item>ul {
+.hover-one {
     display: flex;
     justify-content: space-evenly;
+}
+
+.hover-two {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 180px;
+}
+
+.hover-card:hover {
+    border: 2px solid rgba(216, 65, 90, 0.928);
 
 }
 
-.company {
+/* footer--------------------------------------- */
+.footer {
+    background: #0B0223;
+}
+
+.footer-icon-text {
+    font-size: 45px;
+    font-weight: 700;
+    color: #FFF;
+    margin-left: 20px;
+
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-list li {
+
+    list-style: none;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+
+
+}
+
+.last-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+
+.footer-icon-container img {
+    padding-bottom: 120px;
+    height: 60px;
+    width: 60px;
+    margin: 60px 60px 0px 60px;
+
+}
+
+.copy-container {
+
     color: rgba(255, 255, 255, 0.60);
-    text-align: center;
-    font-family: Work Sans;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
-    margin-top: 200px;
-
-
+    margin-bottom: 80px;
+    text-align: center;
+    padding-bottom: 160px;
 }
 
 
-/* meadia quary */
+/* meadia quary -----------------------------------------------------*/
 @media screen and (max-width:576px) {
 
     nav,
     .banner,
     .card,
-    .main-up {
+    .main-up,
+    .overlap,.last-list {
         flex-direction: column;
+    }
+
+    .img-maindown {
+        padding-right: 30px;
+        margin-right: 180px;
+        max-width: 409px;
+        max-height: 1210px;
+    }
+
+    .img-maindown img {
+
+        width: 300px;
+
+    }
+
+    #overlap-img2 {
+        right: 500px;
+
+
+    }
+
+    #overlap-img {
+        width: 200px;
+        height: 300px;
+        left: 50px;
+        bottom: 40px;
+
     }
 
     .banner-text {
@@ -402,5 +494,112 @@ footer {
     .banner-text {
         width: 580px;
     }
+
+    .header-icon {
+        margin-left: 190px;
+    }
+
+    .hover-card {
+        width: 100px;
+        height: 40px;
+        padding: 5px
+    }
+
+    .hover-text {
+        font-weight: 200;
+        font-size: 10px;
+    }
+
+    .hover-one {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hover-two {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .last-list li{
+        margin-bottom: 10px;
+    }
+    .footer-icon-container img{
+        margin: 20px;
+    }
+    .overlap{
+        margin-top: 10px;
+    }
+
+
+
+
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+
+    nav,
+    .banner,
+    .main-up,
+    .card,
+    .overlap {
+        flex-direction: column;
+    }
+
+    .banner-img img {
+        width: 85%;
+    }
+
+    .main-up-img img {
+        width: 85%;
+
+    }
+
+    .banner-text {
+        width: 700px;
+        height: 700px;
+    }
+
+    .main-up-text-heading {
+        margin-right: 220px;
+    }
+
+    .main-up-text-description {
+        text-align: center;
+    }
+
+    .unleash p {
+        text-align: center;
+    }
+
+    .games-heading {
+        align-items: center;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
+    .card-img {
+        margin-top: 70px;
+    }
+
+    #overlap-img2 {
+        width: 60%;
+        margin-left: 100px;
+    }
+
+    #overlap-img {
+        left: 150px;
+    }
+    .hover-card {
+        width: 100px;
+        height: 40px;
+        padding: 5px
+    }
+    .hover-text {
+        font-weight: 200;
+        font-size: 10px;
+    }
+    .footer-icon-container img{
+        margin: 20px;
+
 
 }
